@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,100&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Menu responsive */
+.navbar-menu i {
+    font-size: 2rem;
+}
+
+.navbar-menu {
+    display: none;
+}
+
+.cabezera{
+    background-image: url('img/hero.jpg');
+    /* Esta propiedad no esta en el sitio original */
+    background-attachment: fixed;
+    height: 100vh;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+}
+
+.logo {
+    background-image: url('img/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 20%;
+    height: 50%;
+    align-self: center;
+}
+
+.enlaces {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.enlaces a:hover {
+    color: #0AABF4;
+    transition: .2s;
+}
+
+.hero-textos {
+    width: 40%;
+    margin: auto 120px;
+    color: white;
+}
+
+.hero-textos h1 {
+    font-size: 4rem;
+    font-weight: 200;
+}
+
+.hero-textos p {
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 90px;
+}
+
+.hero-textos a {
+    background-color: #0F538F;
+    padding: 17px 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+/* Que es undercode */
+.que-es {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.que-es-contenedor {
+    text-align: center;
+}
+
+.que-es-contenedor h1 {
+    font-size: 47px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.que-es-unete-ahora {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 160px;
+    border: 1px solid rgba(0, 0, 0, 0.089);
+    align-items: center;
+}
+
+.que-es-unete-ahora a {
+    padding: 20px;
+    background-color: #292B2C;
+    color: white;
+    text-decoration: none;
+}
+
+/* Fundacion undercode */
+.fundacion {
+    display: flex;
+    align-items: center;
+}
+
+.fundacion-contenedor {
+    background-color: #1C1C1C;
+    color: white;
+    height: 85%;
+    width: 100%;
+}
+
+.fundacion-contenedor-textos {
+    width: 50%;
+    height: 50%;
+    margin: 100px auto;
+    text-align: center;
+}
+.fundacion-contenedor-textos h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.fundacion-contenedor-textos p {
+    margin-bottom: 20px;
+    line-height: 30px;
+} 
+
+.fundacion-contenedor-textos a{
+    display: inline-block;
+    padding: 20px;
+    background-color: #0F538F;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Club beneficios */
+.club-beneficios {
+    background-color: #F5F5F5;
+    padding-bottom: 200px;
+    margin-bottom: 100px;
+}
+
+.club-beneficios-textos {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.club-beneficios-textos h1 {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 100px 0 20px 0;
+}
+
+.club-beneficios-textos p {
+    margin-bottom: 50px;
+}
+.club-beneficios-tarjetas {
+    height: 60%;
+    width: 85%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.club-beneficios-tarjetas-tarjeta-imagen img{
+    width: 100%;
+    border-radius: 2px;
+}
+
+/* Tarjetas */
+
+/* Tarjetas normales */
+.club-beneficios-tarjetas-tarjeta {
+    background-color: white;
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.247);
+    border-radius: 2px;
+}
+
+.club-beneficios-tarjetas-tarjeta-textos {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.club-beneficios-tarjetas-tarjeta-textos h2 {
+    font-weight: 200;
+}
+
+.club-beneficios-tarjetas-tarjeta-textos i {
+    color: #03A9F4;
+    font-size: 1.5rem;
+}
+
+
+/* Tarjetas con efecto hover
+
+.club-beneficios-tarjetas-tarjeta{
+    background-color: white;
+    box-shadow: 4px 2px 5px rgba(0, 0, 0, 0.247);
+    border-radius: 2px;
+}
+  
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido {
+    transform-style: preserve-3d;
+    transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+  }
+
+.club-beneficios-tarjetas-tarjeta:hover .club-beneficios-tarjetas-tarjeta-contenedor-contenido {
+    transform: rotateY(180deg);
+}
+  
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras, .club-beneficios-tarjetas-tarjeta-contenedor-contenido-frente {
+    backface-visibility: hidden;
+}
+  
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-frente{
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-frente-textos {
+    display: flex;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-frente-textos i {
+    color: #03A9F4;
+    font-size: 1.5rem;
+}
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras {
+    background-color: #0CA8EF;
+    color: #faebd7;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras-head i {
+    font-size: 2rem;
+}
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras-head h1{
+    width: 50%;
+}
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras-footer {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras-footer h2{
+    font-weight: 200;
+    margin-bottom: 50px;
+} 
+
+.club-beneficios-tarjetas-tarjeta-contenedor-contenido-atras-footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 50px;
+}
+*/
+
+/* Contacto */
+.contacto {
+    width: 85%;
+    margin: 0 auto;
+    background-image: url('img/vactor-map.png');
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 100px;
+}
+
+.contacto-textos {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.contacto-textos h1{
+    font-size: 2.5rem;
+    font-weight: 200;
+}
+
+.contacto-textos p{
+    line-height: 50px;
+    color: #4F4F4F;
+}
+
+.contacto-form {
+    margin-top: 20px;
+    grid-column: 1 / 3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.contacto-form-groups input, textarea {
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.39);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.contacto-form-groups input:focus, .contacto-form-groups textarea:focus {
+    border-color: #03A9F4;
+    transition: .2s;
+}
+
+.contacto-form-groups textarea {
+    margin-top: 50px;
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+.contacto-form-groups {
+    position: relative;
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+
+.contacto-form-groups input:focus +  label, .contacto-form-groups textarea:focus +  label {
+    color: #03A9F4;
+    transform: translateY(-12px) scale(.8);
+}
+
+.contacto-form-groups label{
+    position: absolute;
+    color: #BFBFBF;
+    top: -7px;
+    left: 3px;
+    transition: transform .3s;
+}
+
+.contacto-detalles p {
+    margin: 30px;
+    font-size: 15px;
+}
+
+.contacto-detalles .contacto-detalles-icon {
+    color: #0F538F;
+    font-size: 1.5rem;
+    margin-right: 7px;
+}
+
+.texto-white-color {
+    color: #9F9F9F;
+}
+.contacto-boton-contenedor  {
+    grid-column: 2 / 3;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.contacto-boton-contenedor a {
+    display: inline-block;
+    background-color: #292B2C;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1C1C1C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.footer-mover {
+    background-color: #292B2C;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 150px;
+    top: -30px;
+}
+
+.footer-social {
+    width: 80%;
+    height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.479);
+    margin: 50px 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+[class^="fab"]{
+    color: white;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+[class^="fab"]:hover {
+    background-color: white;
+    color: #16AFF5;
+    transform: rotate(360deg);
+    transition: .3s;
+    line-height: 50px;
+}
+
+.footer-textos {
+    text-align: center;
+    color: #7BD2F2;
+}
+
+.footer-textos a { color: white; 
+    text-decoration: none;
+}
+
+.footer-textos p {
+    margin-top: 20px;
+}
+
+.footer-textos-otro-color {
+    color: #A3C1CD;
+    line-height: 10px;
+}
+
+.footer-enlaces {
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-enlaces a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0 20px;
+}
+
+.footer-enlaces a:hover {
+    color: #0AABF4;
+    transition: .2s;
+}
+
+/* Para el header */
+
+@media (max-width: 905px) {
+    .hero-textos {
+        margin: auto;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-textos p {
+        font-size: 1.2rem;
+    }
+}
+
+/* Para la seccion contacto */
+@media (max-width: 760px) {
+    .navbar a{
+        display: none;
+    }
+
+    .enlaces {
+        justify-content: flex-end;
+        padding-right: 50px;
+    }
+
+    /* El elmento .navbar-menu no desaparece por la especificidad */
+    .navbar .navbar-menu{
+        display: block;
+        color: #000;
+    }
+
+    .navbar {
+        background-color: white;
+        align-items: center;
+        padding-right: 30px;
+    }
+
+    .logo {
+        background-image: url('img/logo-negro.png');
+        width: 50%;
+    }
+
+    /* La magia para el menu abierto */
+    .responsive {
+        height: 500px;
+        transition: .3s;
+        flex-direction: column;
+    }
+
+    .responsive .enlaces {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .responsive .enlaces a{
+        color: #727272;
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .responsive .fa-times {
+        font-size: 3rem;
+        color: #424242;
+        margin-bottom: 20px;
+    }
+
+    /* Al cerrar el menu que no sea un cambio tan bruzco */
+
+    .navbar {
+        transition: .5s;
+    }
+
+    .contacto-textos {
+        grid-column: 1 / -1;
+    }
+
+    .contacto-form {
+        grid-column: 1 / -1;
+    }
+
+    .contacto-detalles {
+        grid-column: 1 / 3;
+    }
+
+    .contacto-boton-contenedor {
+        grid-column: 3 / -1;
+    }
+
+    .contacto-form input{
+        width: 100%;
+        margin: 20px 0;
+    }
+
+}
+
+/* Break point para las diferentes secciones */
+@media (max-width: 620px){
+    .hero-textos h1 {
+        font-size: 2.5rem;
+    }
+
+    .que-es-contenedor {
+        margin-bottom: 20px;
+    }
+
+    .que-es-contenedor h1 {
+        font-size: 1.7rem;
+    }
+
+    .que-es-unete-ahora {
+        flex-direction: column;
+        height: 200px;
+    }
+
+    .que-es {
+        height: auto;
+    }
+
+    .que-es-unete-ahora h2 {
+        margin-bottom: 10px;
+    }
+
+    .fundacion-contenedor-textos h1 {
+        font-size: 1.5rem;
+    }
+   
+    .club-beneficios-textos {
+        height: 40%;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .club-beneficios-textos h1 {
+        font-size: 1.7rem;
+    }
+
+    .club-beneficios-tarjetas {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+}
+
+/* Galaxy fold */
+@media (max-width: 330px){
+    .club-beneficios-tarjetas {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        text-align: center;
+    }
+
+    .club-beneficios-tarjetas-tarjeta h2{
+        margin-left: 0;
+    }
+
+    [class^="fab"]{
+        color: white;
+        font-size: 1rem;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .footer-enlaces {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-enlaces a{
+        padding: 20px;
+    }
+}
